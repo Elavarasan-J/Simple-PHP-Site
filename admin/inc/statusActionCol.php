@@ -1,0 +1,14 @@
+<?php defined('BASE_PATH') OR exit('No direct script access allowed'); ?>
+		<?php if($trashed==1) { ?>
+								<td><span class="Trashed">Trashed</span></td>
+								<td>
+                                	<span class="desktop"><a href="<?php echo $moduleName ?>.php?<?php echo $moduleName ?>=<?php echo ${$moduleName.'_id'}; ?>" class="edit"><i aria-hidden="true" class="fa fa-pencil"></i> Edit</a> <a href="class_action.php?action=restore&key=<?php echo $moduleName ?>_id&id=<?php echo ${$moduleName.'_id'}; ?>&table=<?php echo $moduleName ?>&page=manage_<?php echo $moduleName ?>" class="restore"><i aria-hidden="true" class="fa fa-recycle"></i> Restore</a></span>
+									<span class="mobile"><a href="<?php echo $moduleName ?>.php?<?php echo $moduleName ?>=<?php echo ${$moduleName.'_id'}; ?>" class="edit"><i aria-hidden="true" class="fa fa-pencil"></i></a> <a href="class_action.php?action=restore&key=<?php echo $moduleName ?>_id&id=<?php echo ${$moduleName.'_id'}; ?>&table=<?php echo $moduleName ?>&page=manage_<?php echo $moduleName ?>" class="restore"><i aria-hidden="true" class="fa fa-recycle"></i></a></span>
+                                </td>
+		<?php } else { ?>
+								<td><a href="class_action.php?action=switchStatus&key=<?php echo $moduleName ?>_id&id=<?php echo ${$moduleName.'_id'}; ?>&table=<?php echo $moduleName ?>&page=manage_<?php echo $moduleName ?>"><span class="<?php echo $utilityObj->status_array[$status]; ?>"><?php echo $utilityObj->status_array[$status]; ?></span></a></td>
+								<td>
+                                	<span class="desktop"><a href="<?php echo $moduleName ?>.php?<?php echo $moduleName ?>=<?php echo ${$moduleName.'_id'}; ?>" class="edit"><i aria-hidden="true" class="fa fa-pencil"></i> Edit</a> <a href="class_action.php?action=trash&key=<?php echo $moduleName ?>_id&id=<?php echo ${$moduleName.'_id'}; ?>&table=<?php echo $moduleName ?>&page=manage_<?php echo $moduleName ?>" class="delete" onclick="return confirm('Are you sure to delete that record?');"><i aria-hidden="true" class="fa fa-trash"></i> Delete</a></span>
+									<span class="mobile"><a href="<?php echo $moduleName ?>.php?<?php echo $moduleName ?>=<?php echo ${$moduleName.'_id'}; ?>" class="edit"><i aria-hidden="true" class="fa fa-pencil"></i></a> <a href="class_action.php?action=trash&key=<?php echo $moduleName ?>_id&id=<?php echo ${$moduleName.'_id'}; ?>&table=<?php echo $moduleName ?>&page=manage_<?php echo $moduleName ?>" class="delete" onclick="return confirm('Are you sure to delete that record?');"><i aria-hidden="true" class="fa fa-trash"></i></a></span>
+                                </td>
+		<?php } ?>

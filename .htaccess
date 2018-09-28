@@ -1,0 +1,126 @@
+### 404 ###
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php
+RewriteRule ^([a-zA-Z0-9_-]+)/?$ $1.php
+### 404 ###
+
+### Page ###
+RewriteEngine On
+RewriteRule ^page/([a-zA-Z0-9_-]+)$ page.php?page_id=$1
+RewriteRule ^page/([a-zA-Z0-9_-]+)/?$ page.php?page_id=$1
+
+RewriteEngine On
+RewriteRule ^page/([a-zA-Z0-9_-]+)$ page.php?parent1=$1&page_id=$2
+RewriteRule ^page/([a-zA-Z0-9_-]+)/?$ page.php?$parent1=$1&page_id=$2
+
+RewriteEngine On
+RewriteRule ^page/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ page.php?parent1=$1&page_id=$2
+RewriteRule ^page/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ page.php?parent1=$1&page_id=$2
+
+RewriteEngine On
+RewriteRule ^page/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ page.php?parent1=$1&parent2=$2&page_id=$3
+RewriteRule ^page/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ page.php?parent1=$1&parent2=$2&page_id=$3
+
+RewriteEngine On
+RewriteRule ^page/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ page.php?parent1=$1&parent2=$2&parent3=$3&page_id=$4
+RewriteRule ^page/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ page.php?parent1=$1&parent2=$2&parent3=$3&page_id=$4
+
+RewriteEngine On
+RewriteRule ^page/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ page.php?parent1=$1&parent2=$2&parent3=$3&parent4=$4&page_id=$5
+RewriteRule ^page/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ page.php?parent1=$1&parent2=$2&parent3=$3&parent4=$4&page_id=$5
+### Page ###
+
+### Post ###
+RewriteEngine On
+RewriteRule ^post_category/([a-zA-Z0-9_-]+)$ post_category.php?post_category_id=$1
+RewriteRule ^post_category/([a-zA-Z0-9_-]+)/?$ post_category.php?post_category_id=$1
+
+RewriteEngine On
+RewriteRule ^post_category/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ post_category.php?post_category_id=$1&page=$2
+RewriteRule ^post_category/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ post_category.php?post_category_id=$1&page=$2
+
+RewriteEngine On
+RewriteRule ^post_archive/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ post_archive.php?post_category_id=$1&year=$2
+RewriteRule ^post_archive/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ post_archive.php?post_category_id=$1&year=$2
+
+RewriteEngine On
+RewriteRule ^post_archive/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ post_archive.php?post_category_id=$1&year=$2&page=$3
+RewriteRule ^post_archive/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ post_archive.php?post_category_id=$1&year=$2&page=$3
+
+RewriteEngine On
+RewriteRule ^post/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ post.php?post_category_id=$1&post_id=$2
+RewriteRule ^post/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ post.php?post_category_id=$1&post_id=$2
+### Post ###
+
+
+ErrorDocument 400 http://www.anncaresfoundation.org/
+ErrorDocument 401 http://www.anncaresfoundation.org/
+ErrorDocument 403 http://www.anncaresfoundation.org/
+ErrorDocument 404 http://www.anncaresfoundation.org/404
+ErrorDocument 500 http://www.anncaresfoundation.org/
+
+
+# Enable Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE application/x-font
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-truetype
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE font/opentype
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/plain
+</IfModule>
+<IfModule mod_gzip.c>
+  mod_gzip_on Yes
+  mod_gzip_dechunk Yes
+  mod_gzip_item_include file .(html?|txt|css|js|php|pl)$
+  mod_gzip_item_include handler ^cgi-script$
+  mod_gzip_item_include mime ^text/.*
+  mod_gzip_item_include mime ^application/x-javascript.*
+  mod_gzip_item_exclude mime ^image/.*
+  mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</IfModule>
+
+# Leverage Browser Caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access 1 year"
+  ExpiresByType image/jpeg "access 1 year"
+  ExpiresByType image/gif "access 1 year"
+  ExpiresByType image/png "access 1 year"
+  ExpiresByType text/css "access 1 month"
+  ExpiresByType text/html "access 1 month"
+  ExpiresByType application/pdf "access 1 month"
+  ExpiresByType text/x-javascript "access 1 month"
+  ExpiresByType application/x-shockwave-flash "access 1 month"
+  ExpiresByType image/x-icon "access 1 year"
+  ExpiresDefault "access 1 month"
+</IfModule>
+<IfModule mod_headers.c>
+  <filesmatch "\.(ico|flv|jpg|jpeg|png|gif|css|swf)$">
+  Header set Cache-Control "max-age=2678400, public"
+  </filesmatch>
+
+  <filesmatch "\.(html|htm)$">
+  Header set Cache-Control "max-age=7200, private, must-revalidate"
+  </filesmatch>
+  <filesmatch "\.(pdf)$">
+  Header set Cache-Control "max-age=86400, public"
+  </filesmatch>
+  <filesmatch "\.(js)$">
+  Header set Cache-Control "max-age=2678400, private"
+  </filesmatch>
+</IfModule>

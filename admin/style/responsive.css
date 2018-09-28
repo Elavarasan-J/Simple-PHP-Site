@@ -1,0 +1,227 @@
+
+@media only screen and (min-width: 1000px) and (max-width: 1330px) {
+
+/*HOMEPAGE*/
+.list								{  width:280px; margin-right:10px ;}
+.main .table2 th					{ width:22% !important;}
+.main .table2 th:first-child		{ width:30% !important;}
+.tables								{ width:100%; padding:0;}
+
+.filter .chzn-container,
+.filter .chzn-container	.chzn-drop	{ width:150px !important;}
+.filter .chzn-container	.chzn-drop input[type="text"]		{ width:113px !important;} 
+
+.table td				{ padding:15px 2px;}
+.table td:first-child	{ padding-left:15px;}
+.table th				{ padding:15px 2px;}
+.table th:first-child	{ padding-left:15px;}
+.main					{ margin:0 0 0 256px; padding:35px 10px 50px;}
+
+
+.table td .mobile						{ display:block;}
+.table td .desktop						{ display:none;}
+.table td a.history,
+.table td a.edit,
+.table td a.cancel,
+.table td a.delete						{ padding:7px 10px;}
+
+.table td a.edit i,
+.table td a.history i,
+.table td a.cancel i,
+.table td a.delete i					{ font-size:13px;}
+
+.table.user th:nth-child(2)					{ width:10%;}
+.table.user th:nth-child(3)					{ width:13%;}
+
+
+.filter.manage td							{ display:block; width:100%; padding-bottom:10px;}
+.filter.manage td:nth-child(3)				{ display:block; width:100%;}
+.filter.manage td	.chzn-container			{ margin-right:0 !important;}
+.filter.manage td	.link					{ margin:0 !important;}
+.filter.manage input[type="text"]			{ width:142px !important; margin-right:0 !important;}
+
+.filter.users td:nth-child(1)				{ width:55% !important;}
+.filter.users td:nth-child(2)				{ width:45% !important;}
+
+.filter.pro td								{ display:block; width:100%; padding-bottom:10px;}
+
+.filter.reg td:nth-child(1)					{ width:33% !important;}
+.filter.reg td:nth-child(2)					{ width:33% !important;}
+.filter.reg td:nth-child(3)					{ width:33% !important;}
+.filter.reg td:nth-child(4)					{ width:33% !important;}
+.filter.reg td:nth-child(5)					{ width:33% !important;}
+.filter.reg td:nth-child(6)					{ width:33% !important;}
+.filter.reg td:nth-child(7)					{ width:33% !important;}
+.filter.reg td	{ float:left;padding-bottom:10px;}
+
+
+
+.filter.luxe td:nth-child(1)				{ width:45% !important;}
+.filter.luxe td:nth-child(2)				{ width:55% !important;}
+
+.filter.thera td:nth-child(1)				{ width:100% !important;}
+.filter.thera td:nth-child(2)				{ width:100% !important;}
+.filter.thera td	{ float:left;padding-bottom:10px;}
+
+.filter.thera input[type="text"]		{ margin-bottom:10px;}
+
+
+.table1.auto td								{ width:10%;}
+.pagi-control								{ float:right; width:100%;}
+.pagi-control form							{ float:right; margin:0;}
+
+.filter.export td:nth-child(2)				{ width:9%;}
+.filter.coupon td:nth-child(2)				{ width:40%;}
+.filter.customers td:nth-child(2)			{ display:block; width:100%; padding-bottom:10px;}
+
+.main .payment .chzn-container				{ margin-right:0; margin-bottom:10px;}
+
+.filter.registration td	{ float:left;padding-bottom:10px;}
+.filter.registration td:nth-child(1)	{ width:50%}
+.filter.registration td:nth-child(2)	{ width:50%}
+.filter.registration td:nth-child(3)	{ width:22%}
+.filter.registration td:nth-child(4)	{ width:33%}
+.filter.registration .chzn-container	{ margin-right:5px !important;}
+.filter.registration input.uniform-input				{ margin-right:5px !important; width:140px !important;}
+.top-bg									{ padding:10px;}
+table.payment-info tr td .payment			{ width:97% !important; }
+
+.filter.sales-client td:nth-child(1)	{ width:55%}
+.filter.sales-client td:nth-child(2)	{ width:45%}
+.filter.sales-client td:nth-child(3)	{ width:22%}
+.filter.sales-client td:nth-child(4)	{ width:33%}
+.filter.sales-client td	{ float:left;padding-bottom:10px;}
+
+.filter.sales-country td:nth-child(1)	{ width:100%}
+.filter.sales-country td:nth-child(2)	{ width:30%}
+.filter.sales-country td:nth-child(3)	{ width:70%}
+.filter.sales-country td	{ float:left;padding-bottom:10px;}
+
+
+.filter.sales-date td:nth-child(1)	{ width:46%}
+.filter.sales-date td:nth-child(2)	{ width:22%}
+.filter.sales-date td:nth-child(3)	{ width:35%}
+
+.filter.sales-products td:nth-child(1)	{ width:55%}
+.filter.sales-products td:nth-child(2)	{ width:45%}
+
+
+.filter.sales-state td:nth-child(1)	{ width:22%}
+.filter.sales-state td:nth-child(2)	{ width:78%}
+.filter.sales-state td:nth-child(3)	{ width:22%}
+.filter.sales-state td:nth-child(4)	{ width:33%}
+.filter.sales-state td	{ float:left;padding-bottom:10px; height:33px;}
+
+.filter.sales-tax td:nth-child(1)	{ width:46%}
+.filter.sales-tax td:nth-child(2)	{ width:20%}
+.filter.sales-tax td:nth-child(3)	{ width:34%}
+.filter.sales-tax td	{ float:left;}
+
+.filter.sales-rep td:nth-child(1)	{ width:22%}
+.filter.sales-rep td:nth-child(2)	{ width:75%}
+.filter.sales-rep td:nth-child(3)	{ width:100%}
+.filter .link						{ margin:0 20px 0 0 !important; } 
+.filter.sales-rep td	{ float:left; padding-bottom:10px;}
+
+.filter.customers td:nth-child(1)	{ width:53%}
+.filter.customers td:nth-child(2)	{ width:33%}
+.filter.customers td:nth-child(3)	{ width:32%}
+.filter.customers td:nth-child(4)	{ width:48%}
+.filter.customers td:nth-child(5)	{ width:48%}
+.filter .link						{ margin:0 20px 0 0 !important; } 
+.filter.customers td	{ float:left; padding-bottom:10px; height:33px;}
+
+.table.menu td:nth-child(1)	{ width:3%}
+.table.menu td:nth-child(2)	{ width:37%}
+.table.menu td:nth-child(3)	{ width:8%}
+.table.menu td:nth-child(4)	{ width:8%}
+.table.menu td:nth-child(5)	{ width:9%}
+.table.menu td:nth-child(6)	{ width:9}
+.table.menu td:nth-child(7)	{ width:26%}
+
+
+}
+
+@media only screen and (min-width: 1331px) and (max-width: 1790px) {
+	
+	.filter.registration td	{ float:left;padding-bottom:10px;}
+.filter.registration td:nth-child(1)	{ width:27%}
+.filter.registration td:nth-child(2)	{ width:37%}
+.filter.registration td:nth-child(3)	{ width:13%}
+.filter.registration td:nth-child(4)	{ width:23%}
+.filter.registration .chzn-container	{ margin-right:5px !important;}
+.filter.registration input.uniform-input				{ margin-right:5px !important; width:140px !important;}
+	
+.table.stores th:nth-child(3)			{ width:40%;}
+		
+.table.videos th:nth-child(3)			{ width:47%;}
+		
+.table.press th:nth-child(3)			{ width:42%;}
+
+.filter.sales-client td:nth-child(1)	{ width:38%}
+.filter.sales-client td:nth-child(2)	{ width:62%}
+.filter.sales-client td:nth-child(3)	{ width:19.5%}
+.filter.sales-client td:nth-child(4)	{ width:33%}
+.filter.sales-client td	{ float:left;padding-bottom:10px;}
+
+.filter.sales-date td:nth-child(1)	{ width:23%}
+.filter.sales-date td:nth-child(2)	{ width:30%}
+.filter.sales-date td:nth-child(3)	{ width:16%}
+
+.filter.sales-products td:nth-child(1)	{ width:25%}
+.filter.sales-products td:nth-child(2)	{ width:45%}
+
+
+.filter.sales-state td:nth-child(1)	{ width:20%}
+.filter.sales-state td:nth-child(2)	{ width:36%}
+.filter.sales-state td:nth-child(3)	{ width:16%}
+.filter.sales-state td:nth-child(4)	{ width:27%}
+.filter.sales-state td	{ float:left;padding-bottom:10px; height:33px;}
+
+.filter.sales-tax td:nth-child(1)	{ width:46%}
+.filter.sales-tax td:nth-child(2)	{ width:20%}
+.filter.sales-tax td:nth-child(3)	{ width:34%}
+.filter.sales-tax td	{ float:left;}
+.filter.sales-tax td	{ float:left;}
+
+.filter.sales-rep td:nth-child(1)	{ width:20%}
+.filter.sales-rep td:nth-child(2)	{ width:35%}
+.filter.sales-rep td:nth-child(3)	{ width:45%}
+.filter .link						{ margin:0 20px 0 0 !important; } 
+.filter.sales-rep td	{ float:left; padding-bottom:10px;}
+
+.filter.customers td:nth-child(1)	{ width:35%}
+.filter.customers td:nth-child(2)	{ width:24%}
+.filter.customers td:nth-child(3)	{ width:32%}
+.filter.customers td:nth-child(4)	{ width:35%}
+.filter.customers td:nth-child(5)	{ width:48%}
+.filter .link						{ margin:0 20px 0 0 !important; } 
+.filter.customers td	{ float:left; padding-bottom:10px; height:33px;}
+
+.table.block th:nth-child(1)	{ width:10%}
+.table.block th:nth-child(2)	{ width:20%}
+.table.block th:nth-child(3)	{ width:40%}
+.table.block th:nth-child(4)	{ width:30%}
+
+
+
+.filter.manage td							{ display:inline-block; width:49%;}
+.filter.manage td:nth-child(3)				{ display:block; width:100%; padding-top:10px;}
+.filter.manage td	.chzn-container			{ margin-right:0 !important;}
+.filter.manage td	.link					{ margin:0 !important;}
+.filter.manage input[type="text"]			{ width:142px !important; margin-right:0 !important;}
+
+.table.orders th:nth-child(1)	{ width:3%}
+.table.orders th:nth-child(2)	{ width:10%}
+.table.orders th:nth-child(3)	{ width:20%}
+.table.orders th:nth-child(4)	{ width:15%}
+.table.orders th:nth-child(5)	{ width:8%}
+.table.orders th:nth-child(6)	{ width:13%}
+.table.orders th:nth-child(7)	{ width:15%}
+.table.orders th:nth-child(8)	{ width:50%}
+
+.filter.export td:nth-child(2)				{ width:9%;}
+
+	
+
+}

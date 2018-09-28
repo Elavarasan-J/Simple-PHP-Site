@@ -1,0 +1,1 @@
+					<p class="re" style="float:<?php echo (isset($res[0]) && $res[0]!='')?"none":"right"; ?>;">Total Records : <?php echo $total_records; ?></p>
